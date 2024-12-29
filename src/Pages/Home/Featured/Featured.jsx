@@ -13,8 +13,8 @@ const Featured = () => {
                 <div className="md:ml-10">
                     <p>Mar 14, 2024</p>
                     <p className="uppercase">Where can i get some</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error magni mollitia natus expedita nam vero hic obcaecati tempore voluptate possimus?</p>
-                    <button className="btn btn-outline border-0 border-b-4 text-white mt-4">Order Now</button>
+                    <p>You can enjoy delicious restaurant food by visiting nearby diners, ordering online through food delivery apps, or exploring popular local eateries.</p>
+                    <button className="btn btn-outline border-0 border-b-4 border-t-4 text-black mt-4">Order Now</button>
                 </div>
             </div>
         </div>

@@ -13,7 +13,7 @@ const Category = () => {
         <div>
             <div className='text-center p-20'>
                 <p className='text-orange-300'>---From 11:00am to 10:00pm---</p>
-                <h1 className='text-4xl font-extrabold text-white '>ORDER ONLINE</h1>
+                <h1 className='text-4xl font-extrabold text-black  '>ORDER ONLINE</h1>
             </div>
             <Swiper
                 slidesPerView={4}
