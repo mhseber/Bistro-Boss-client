@@ -1,11 +1,19 @@
 import { Helmet } from 'react-helmet-async';
+import Cover from '../../Home/Shared/Cover/Cover';
+import menuImg from '../../../assets/menu/banner3.jpg'
+import PopularMenu from '../../Home/PopularMenu/PopularMenu';
 const Menu = () => {
     return (
         <div>
             <Helmet>
                 <title>BisTro Boss || Menu</title>
             </Helmet>
-            mennnnnnnnnnu
+            <Cover img={menuImg} title="our menu"></Cover>
+            <PopularMenu></PopularMenu>
+            <Cover img={menuImg} title="our menu"></Cover>
+            <PopularMenu></PopularMenu>
+            <Cover img={menuImg} title="our menu"></Cover>
+            <PopularMenu></PopularMenu>
         </div>
     );
 };
