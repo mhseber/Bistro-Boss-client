@@ -33,7 +33,7 @@ const Testimonials = () => {
                                 value={review.rating}
                                 readOnly
                             />
-                            <FaQuoteLeft />
+                            <p className="pt-3 text-6xl"><FaQuoteLeft /></p>
                             <p className="py-8">{review.details}</p>
                             <h3 className="text-2xl text-orange-400">{review.name}</h3>
                         </div>
