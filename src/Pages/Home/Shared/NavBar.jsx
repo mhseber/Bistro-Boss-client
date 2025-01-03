@@ -21,9 +21,9 @@ const NavBar = () => {
         <li><Link to="/secret">Secret </Link></li>
         <li>
             <Link to="/dashboard/cart">
-                <button className="btn">
-                    <FaCartShopping className="mr-2" />
-                    <div className="badge badge-secondary">+{cart.length}</div>
+                <button className="flex">
+                    <FaCartShopping className="mr-2 text-xl" />
+                    <div className="badge bg-yellow-400">+{cart.length}</div>
                 </button>
             </Link>
         </li>
@@ -31,7 +31,7 @@ const NavBar = () => {
         {
             user ? <>
                 {/* <span>{user?.displayName}</span> */}
-                <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button>
+                <button onClick={handleLogOut} className="btn btn-outline border-0 border-b-4 border-t-4 text-black ">LogOut</button>
             </> : <>
                 <li><Link to="/login">LogIn </Link></li>
             </>
@@ -40,7 +40,7 @@ const NavBar = () => {
     </>
     return (
         <>
-            <div className="navbar fixed z-10 bg-gray-600 max-w-screen-xl text-white">
+            <div className="navbar fixed z-10 bg-white bg-opacity-30 backdrop-blur-md text-black shadow-lg">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -63,16 +63,14 @@ const NavBar = () => {
                             {navOptions}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">BisTro Boss</a>
+                    <a className="text-3xl font-extrabold">BisTro Boss</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 ">
                         {navOptions}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
-                </div>
+
             </div>
         </>
     );
