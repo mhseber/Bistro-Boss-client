@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 
 const Login = () => {
 
-    const [disabled, setDisabled] = useState(true);
+    const [setDisabled] = useState(true);
     const { signIn } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
@@ -124,7 +124,7 @@ const Login = () => {
                                         value="Login" />
                                 </div>
                             </form>
-                            <p><small>New Here?<Link to="/signup">Create an Account</Link></small></p>
+                            <p className="px-6"><small>New Here?<Link to="/signup">Create an Account</Link></small></p>
                         </div>
                     </div>
                 </div>
