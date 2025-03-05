@@ -8,7 +8,6 @@ import Order from "../Pages/Order/Order/Order";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
 import PrivateRouter from "./PrivateRouter";
-import Secret from "../Pages/Home/Shared/Secret/Secret";
 import Dashboard from "../Layout/Dashboard";
 import Cart from "../Pages/Dashboard/Cart/Cart";
 import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
@@ -20,6 +19,7 @@ import Payment from "../Pages/Dashboard/Payment/Payment";
 import PaymentHistory from "../Pages/Dashboard/PaymentHistory/PaymentHistory";
 import UserHome from "../Pages/Dashboard/UserHome/UserHome";
 import AdminHome from "../Pages/Dashboard/AdminHome/AdminHome";
+import ContactUs from "../Pages/contactUs/contactUs";
 
 export const router = createBrowserRouter([
     {
@@ -47,8 +47,8 @@ export const router = createBrowserRouter([
                 element: <SignUp></SignUp>
             },
             {
-                path: 'secret',
-                element: <PrivateRouter><Secret></Secret></PrivateRouter>
+                path: 'contactUs',
+                element: <PrivateRouter> <ContactUs></ContactUs> </PrivateRouter>
             }
         ]
     },
@@ -90,7 +90,7 @@ export const router = createBrowserRouter([
             {
                 path: 'updateItem/:id',
                 element: <AdminRoute><UpdateItem></UpdateItem></AdminRoute>,
-                loader: ({ params }) => fetch(`https://bistro-boss-server-phi-black.vercel.app/menu/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/menu/${params.id}`)
             },
             {
                 path: 'users',

@@ -4,6 +4,7 @@ import { AuthContext } from "../../../Provider/AuthProvider";
 import { FaCartShopping } from "react-icons/fa6";
 import useCart from "../../../Hooks/useCart";
 import useAdmin from "../../../Hooks/useAdmin";
+import logo from "../../../assets/logo.png"
 
 
 const NavBar = () => {
@@ -20,7 +21,7 @@ const NavBar = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/menu">Our Menu</Link></li>
         <li><Link to="/order/salad">Order Food </Link></li>
-        <li><Link to="/secret">Secret </Link></li>
+        <li><Link to="/contactUs">Contact Us </Link></li>
 
         {
             user && isAdmin && <li><Link to="/dashboard/adminHome">Dashboard </Link></li>
@@ -28,14 +29,9 @@ const NavBar = () => {
         {
             user && !isAdmin && <li><Link to="/dashboard/userHome">Dashboard </Link></li>
         }
-
-
-
-
-
         <li>
             <Link to="/dashboard/cart">
-                <button className="flex">
+                <button className="flex pr-3">
                     <FaCartShopping className="mr-2 text-xl" />
                     <div className="badge bg-yellow-400">+{cart.length}</div>
                 </button>
@@ -77,10 +73,11 @@ const NavBar = () => {
                             {navOptions}
                         </ul>
                     </div>
-                    <a className="text-3xl font-extrabold">BisTro Boss</a>
+                    <img className="w-10 " src={logo} alt="logo" />
+                    <a className="text-5xl font-extrabold pl-3">BisTro Boss</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 ">
+                    <ul className="menu menu-horizontal px-1 pr-20 text-[15px] font-extrabold ">
                         {navOptions}
                     </ul>
                 </div>

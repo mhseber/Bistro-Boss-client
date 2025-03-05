@@ -51,7 +51,7 @@ const Category = () => {
                 <img className='w-[1320px] h-[572px]' src={service} alt="" />
                 <div className=' absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-[1096px] h-[333.67px] rounded-2xl border-4   bg-white mx-auto'>
                     <h1 className='text-4xl items-center pt-20 font-extrabold text-black'>Bistro Boss</h1>
-                    <p className='text-black pt-4'>Restaurants and chefs share a deeply interconnected relationship that is essential for the success of the food and hospitality industry. A restaurant provides the platform where the chef's creativity and skills come to life.</p>
+                    <p className='text-black pt-4'>Restaurants and chefs share a deeply interconnected relationship that is essential for the success of the food and hospitality industry. A restaurant provides the platform where the chef creativity and skills come to life.</p>
                 </div>
             </div>
         </div>
