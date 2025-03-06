@@ -4,6 +4,7 @@ import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import { MdAddCall } from "react-icons/md";
 import { Ri24HoursFill } from "react-icons/ri";
 import { FaLocationDot } from "react-icons/fa6";
+import { IoIosSend } from "react-icons/io";
 const ContactUs = () => {
     return (
         <div className="">
@@ -66,6 +67,44 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
+            {/* CONTACT FORM */}
+            <section>
+                {/* title */}
+                <SectionTitle
+                    subHeading="---Send Us a Message---"
+                    heading="CONTACT FORM"
+                ></SectionTitle>
+                <div className="bg-[#D1A054] ">
+                    <div className="lg:p-20 p-10">
+                        <div className="lg:flex gap-4">
+                            <fieldset className="fieldset">
+                                <legend className="fieldset-legend mb-3"> Name*</legend>
+                                <input type="text" className="input lg:w-[500px] w-[300px]" placeholder="Type here" />
+
+                            </fieldset>
+                            <fieldset className="fieldset">
+                                <legend className="fieldset-legend mb-3">Email*</legend>
+                                <input type="email" className="input lg:w-[500px]  w-[300px]" placeholder="Type your email" />
+
+                            </fieldset>
+                        </div>
+                        <div className="mt-4">
+                            <fieldset className="fieldset">
+                                <legend className="fieldset-legend mb-3">Phone*</legend>
+                                <input type="number" className="input lg:w-[1015px]  w-[300px]" placeholder="Type your number" />
+
+                            </fieldset>
+                        </div>
+                        <div className="pt-6">
+                            <legend className="fieldset-legend mb-3">Message*</legend>
+                            <textarea type="text" placeholder="Type your massage here " className="textarea textarea-primary lg:w-[1015px]  w-[300px]"></textarea>
+                        </div>
+                        <div className="flex justify-center">
+                            <button className="btn btn-lg bg-[#835D23] text-white border-none mt-10">Send Massage <IoIosSend /></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };
